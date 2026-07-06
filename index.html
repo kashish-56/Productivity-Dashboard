@@ -27,12 +27,12 @@
       </h1>
 
       <div class="top-btns">
-        <button>
-          <i class="fa-solid fa-moon"></i>
+        <button id="themeToggle">
+          <i class="fa-solid fa-moon" id="toggle"></i>
           Toggle
         </button>
 
-        <button>
+        <button class="github">
           <i class="fa-brands fa-github"></i>
           GitHub
         </button>
@@ -253,7 +253,7 @@
     <input
         type="text"
         id="plan-1"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -272,7 +272,7 @@
     <input
         type="text"
         id="plan-2"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -291,7 +291,7 @@
     <input
         type="text"
         id="plan-3"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -310,7 +310,7 @@
     <input
         type="text"
         id="plan-4"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -329,7 +329,7 @@
     <input
         type="text"
         id="plan-5"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -348,7 +348,7 @@
     <input
         type="text"
         id="plan-6"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -367,7 +367,7 @@
     <input
         type="text"
         id="plan-7"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -386,7 +386,7 @@
     <input
         type="text"
         id="plan-8"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -405,7 +405,7 @@
     <input
         type="text"
         id="plan-9"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -424,7 +424,7 @@
     <input
         type="text"
         id="plan-10"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -443,7 +443,7 @@
     <input
         type="text"
         id="plan-11"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -462,7 +462,7 @@
     <input
         type="text"
         id="plan-12"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -481,7 +481,7 @@
     <input
         type="text"
         id="plan-13"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -500,7 +500,7 @@
     <input
         type="text"
         id="plan-14"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -519,7 +519,7 @@
     <input
         type="text"
         id="plan-15"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -538,7 +538,7 @@
     <input
         type="text"
         id="plan-16"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -557,7 +557,7 @@
     <input
         type="text"
         id="plan-17"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -576,7 +576,7 @@
     <input
         type="text"
         id="plan-18"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -595,7 +595,7 @@
     <input
         type="text"
         id="plan-19"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -614,7 +614,7 @@
     <input
         type="text"
         id="plan-20"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -633,7 +633,7 @@
     <input
         type="text"
         id="plan-21"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -652,7 +652,7 @@
     <input
         type="text"
         id="plan-22"
-        placeholder="Write your plan..."
+       placeholder="....."
     >
 
     <div class="slot-actions">
@@ -671,7 +671,7 @@
     <input
         type="text"
         id="plan-23"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -690,7 +690,7 @@
     <input
         type="text"
         id="plan-24"
-        placeholder="Write your plan..."
+        placeholder="....."
     >
 
     <div class="slot-actions">
@@ -706,6 +706,106 @@
 
     </div>
     </div>
+
+    <section class="quote-card">
+       <button class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+  <h2>💡 Motivation Quote</h2>
+
+  <div class="quote-content">
+    <p id="quoteText">Click “New Quote” to get motivated...</p>
+    <span id="quoteAuthor">—</span>
+  </div>
+
+  <div class="quote-actions">
+    <button id="newQuoteBtn">New Quote</button>
+  </div>
+
+  <p id="quoteStatus"></p>
+</section>
+
+  <section class="pomodoro-card">
+     <button class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+   <div>
+     <h1 class="time-over"></h1>
+     <h2 class="timer">Timer</h2>
+<svg class="stopwatch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Stopwatch--Streamline-Ultimate" height="150" width="150">
+  <desc>
+    Stopwatch Streamline Icon: https://streamlinehq.com
+  </desc>
+  <path d="M10.5 0.501h3v4.118h-3Z" fill="#dff9ff" stroke-width="1"></path>
+  <path d="M10.5 0.501H12v4.118h-1.5Z" fill="#ffffff" stroke-width="1"></path>
+  <path d="m10.5 4.618 0 -4.117 3 0 0 4.118" fill="none" stroke="#00303e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+  <path d="M2.5 14.001a9.5 9.5 0 1 0 19 0 9.5 9.5 0 1 0 -19 0" fill="#9feaff" stroke-width="1"></path>
+  <path d="M5.282 20.718A9.5 9.5 0 0 1 18.718 7.283Z" fill="#dff9ff" stroke-width="1"></path>
+  <path d="M2.5 14.001a9.5 9.5 0 1 0 19 0 9.5 9.5 0 1 0 -19 0" fill="none" stroke="#00303e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+  <path d="m9 0.501 6 0" fill="none" stroke="#00303e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+  <path d="M18.717 7.284 20.5 5.501" fill="none" stroke="#00303e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+  <path d="m20 5.001 1 1" fill="none" stroke="#00303e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+  <path d="m12 14.001 -4.5 -4.5" fill="none" stroke="#00303e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+</svg>
+   </div>
+  <div class="timer-display" id="timerDisplay">
+    25:00
+  </div>
+
+  <div class="timer-controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <p id="timerStatus"></p>
+</section>
+
+<section class="goals-card">
+         <button class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+    
+    <div class="goal-header">
+        <h2>
+            🎯
+            Daily Goals
+        </h2>
+
+        <p>Set your targets and complete them today.</p>
+    </div>
+
+    <div class="goal-input-box">
+
+        <input
+            type="text"
+            id="goalInput"
+            placeholder="Enter today's goal..."
+        >
+
+        <button id="addGoalBtn">
+            <i class="fa-solid fa-plus"></i>
+            Add Goal
+        </button>
+
+    </div>
+
+    <div class="goal-progress">
+
+        <div class="progress-info">
+            <span>Today's Progress</span>
+            <h3 id="goalCount"><span class="completedG">0</span> / <span class="totalG">0</span> Completed</h3>
+        </div>
+
+    </div>
+
+    <ul id="goalList">
+    </ul>
+
+</section>
 
     <script src="script.js"></script>
   </body>
