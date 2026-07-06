@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <i class="fa-solid fa-chart-line"></i>
+        Productivity Dashboard
+      </h1>
+
+      <div class="top-btns">
+        <button>
+          <i class="fa-solid fa-moon"></i>
+          Toggle
+        </button>
+
+        <button>
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <video autoplay muted loop id="bgVideo">
+       
+      </video>
+
+     <div class="main">
+       <div class="overlay"></div>
+      <section class="hero">
+        <div class="left">
+          <div class="left-top">
+            <p style="border-bottom: 1px solid gray;"><i class="ri-calendar-line"></i> Date & Time</p>
+              <p id="date">05 July 2026</p>
+              <h1 id="day">Sunday</h1>
+            <p id="time">08:42:55 <span>PM</span></p>
+          </div>
+          <div class="location-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h2 id="place">Hazaribagh</h2>
+
+              <p id="state">Jharkhand, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <p style="border-bottom: 1px solid gray;"><i class="ri-cloud-line"></i> Weather</p>
+          <div class="weather-top">
+            <i id="weatherIcon" class="fa-solid fa-cloud"></i>
+
+            <div>
+              <h1 id="degree"></h1>
+
+              <h3 id="weather"></h3>
+            </div>
+          </div>
+
+          <div class="weather-details">
+            <div class="detail">
+               <div class="temp">
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Temperature-Thermometer-High--Streamline-Ultimate" height="28" width="26">
+  <desc>
+    Temperature Thermometer High Streamline Icon: https://streamlinehq.com
+  </desc>
+  <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M14.8647 13.4426h1.9215" stroke-width="1"></path>
+  <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M14.8647 8.63907h1.9215" stroke-width="1"></path>
+  <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M14.8647 3.83554h1.9215" stroke-width="1"></path>
+  <path fill="#ff808c" d="M12.9526 15.8635V2.91324c0 -0.50742 -0.2015 -0.99406 -0.5603 -1.35286C12.0335 1.20157 11.5468 1 11.0394 1s-0.9941 0.20157 -1.35287 0.56038c-0.3588 0.3588 -0.56037 0.84544 -0.56037 1.35286V15.8635c-0.72902 0.4211 -1.29875 1.0709 -1.62083 1.8487 -0.32209 0.7778 -0.37853 1.6402 -0.16058 2.4534 0.21795 0.8131 0.69811 1.5317 1.36603 2.0442 0.66792 0.5124 1.48632 0.7902 2.32812 0.7902 0.8419 0 1.6602 -0.2778 2.3282 -0.7902 0.6679 -0.5125 1.148 -1.2311 1.366 -2.0442 0.2179 -0.8132 0.1615 -1.6756 -0.1606 -2.4534 -0.3221 -0.7778 -0.8908 -1.4276 -1.6199 -1.8487Z" stroke-width="1"></path>
+  <path fill="#ffef5e" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M11.0389 20.1282c0.2537 0 0.4969 -0.1008 0.6763 -0.2802 0.1793 -0.1793 0.2801 -0.4226 0.2801 -0.6762 0 -0.2537 -0.1008 -0.4969 -0.2801 -0.6763 -0.1794 -0.1793 -0.4226 -0.2801 -0.6763 -0.2801 -0.2535 0 -0.4966 0.1007 -0.6759 0.28 -0.1793 0.1792 -0.28 0.4224 -0.28 0.6759 0 0.2535 0.1007 0.4967 0.28 0.6759 0.1793 0.1793 0.4224 0.281 0.6759 0.281Z" stroke-width="1"></path>
+  <path fill="#ffffff" d="M11.0392 1.00146c-0.507 0 -0.9933 0.20143 -1.3518 0.55996 -0.35854 0.35853 -0.55996 0.84481 -0.55996 1.35185v4.99758H12.952V2.91423c0.0001 -0.25106 -0.0492 -0.49969 -0.1452 -0.73169 -0.0959 -0.232 -0.2366 -0.44283 -0.4141 -0.62044 -0.1774 -0.17762 -0.3881 -0.31855 -0.62 -0.41474s-0.4805 -0.14577 -0.7315 -0.1459h-0.002Z" stroke-width="1"></path>
+  <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M12.9526 15.8635V2.91324c0 -0.50742 -0.2015 -0.99406 -0.5603 -1.35286C12.0335 1.20157 11.5468 1 11.0394 1s-0.9941 0.20157 -1.35287 0.56038c-0.3588 0.3588 -0.56037 0.84544 -0.56037 1.35286V15.8635c-0.72902 0.4211 -1.29875 1.0709 -1.62083 1.8487 -0.32209 0.7778 -0.37853 1.6402 -0.16058 2.4534 0.21795 0.8131 0.69811 1.5317 1.36603 2.0442 0.66792 0.5124 1.48632 0.7902 2.32812 0.7902 0.8419 0 1.6602 -0.2778 2.3282 -0.7902 0.6679 -0.5125 1.148 -1.2311 1.366 -2.0442 0.2179 -0.8132 0.1615 -1.6756 -0.1606 -2.4534 -0.3221 -0.7778 -0.8908 -1.4276 -1.6199 -1.8487Z" stroke-width="1"></path>
+  <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M11.0391 18.2154V3.87012" stroke-width="1"></path>
+</svg> 
+              <span>Feels Like</span>
+               </div>
+              <span id="heat"></span>
+            </div>
+
+            <div class="detail">
+                <div class="temp">
+                    <p>💧</p>
+                   <span> Humidity</span>
+                </div>
+             
+              <span id="humidity"></span>
+            </div>
+
+            <div class="detail">
+                <div class="temp">
+                <i class="ri-windy-fill"></i>
+              <span>Wind</span>
+                </div>
+              <span id="wind"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+   <div class="feature-menu">
+
+  <button class="feature todo" id="todo">
+    <span>Todo List 📝</span>
+    <video muted loop class="video" >
+      <source src="assets/task.mp4" type="video/mp4" />
+    </video>
+  </button>
+
+  <button class="feature planners" id="planner">
+    <span>Planner 📅</span>
+    <video muted loop class="video">
+      <source src="assets/planner.mp4" type="video/mp4" />
+    </video>
+  </button>
+
+  <button class="feature goals" id="goals">
+    <span>Goals 🎯</span>
+    <video muted loop class="video">
+      <source src="assets/goals.mp4" type="video/mp4" />
+    </video>
+  </button>
+  <button class="feature pomodoro" id="pomodoro">
+    <span>Pomodoro <i class="fa-solid fa-stopwatch"></i></span>
+    <video muted loop class="video">
+      <source src="assets/pomodoro.mp4" type="video/mp4" />
+    </video>
+  </button>
+  <button class="feature quotes" id="quotes">
+    <span>Quotes 💬</span>
+    <video muted loop class="video">
+      <source src="assets/quotes.mp4" type="video/mp4" />
+    </video>
+  </button>
+
+</div>
+      </div>
+     </div>
+    </main>
+
+       <section class="todo-section">
+        <div class="todo-page">
+
+    <div class="todo-header">
+
+        <button class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+
+        <h1>Todo List</h1>
+
+    </div>
+
+    <div class="todo-input">
+
+        <input
+        type="text"
+        id="taskInput"
+        placeholder="What do you want to do today?">
+
+        <button id="addTask">
+            <i class="fa-solid fa-plus"></i>
+            Add
+        </button>
+
+    </div>
+    </div>
+     <div class="todo-page">
+    <div class="todo-info">
+
+        <h3>Today's Tasks</h3>
+
+        <p><span id="count">0</span> Tasks</p>
+
+    </div>
+
+    <ul id="taskList">
+
+    </ul>
+    </div>
+
+</section>
+
+  <div class="planner-container">
+    <header class="planner-header">
+
+    <button class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+
+    <div class="planner-title">
+
+        <h1>
+            <i class="fa-regular fa-calendar-days"></i>
+            Daily Planner
+        </h1>
+
+        <p>Organize your entire day, one hour at a time.</p>
+
+    </div>
+
+    <div class="planner-info">
+
+        <div class="today">
+
+            <i class="fa-regular fa-calendar"></i>
+
+            <span id="plannerDate">
+                06 July 2026
+            </span>
+
+        </div>
+
+        <div class="planner-time">
+
+            <i class="fa-regular fa-clock"></i>
+
+            <span id="plannerTime">
+                 10:30 AM
+            </span>
+
+        </div>
+
+    </div>
+
+</header>
+    <div class="planner">
+      <div class="planner-slot">
+    <div class="slot-time">04:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-1"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">05:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-2"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">06:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-3"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">07:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-4"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">08:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-5"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">09:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-6"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">10:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-7"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">11:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-8"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">12:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-9"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">01:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-10"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">02:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-11"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">03:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-12"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">04:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-13"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">05:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-14"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">06:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-15"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">07:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-16"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">08:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-17"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">09:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-18"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">10:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-19"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">11:00 PM</div>
+
+    <input
+        type="text"
+        id="plan-20"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">12:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-21"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">01:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-22"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">02:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-23"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+<div class="planner-slot">
+    <div class="slot-time">03:00 AM</div>
+
+    <input
+        type="text"
+        id="plan-24"
+        placeholder="Write your plan..."
+    >
+
+    <div class="slot-actions">
+        <button class="save" data-hour="8">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button class="clear" data-hour="8">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
