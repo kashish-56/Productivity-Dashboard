@@ -1300,3 +1300,7 @@ body.light-mode .todo-page #taskInput{
 body.light-mode .todo-page #taskList .task{
   background: rgba(128, 128, 128, 0.356);
 }
+
+body.light-mode .planner-slot input::placeholder {
+  color: black;
+}

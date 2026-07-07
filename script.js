@@ -455,10 +455,10 @@ let planUI = ()=> {
 }
 
 planner.forEach((plan)=>{
-   let save = plan.querySelector(".save");
+  //  let save = plan.querySelector(".save");
    let clear = plan.querySelector(".clear");
    let input = plan.querySelector("input");
-   save.addEventListener("click",()=>{
+   input.addEventListener("input",()=>{
       let obj ={
         "id":input.id,
          "plan" : input.value,
@@ -480,9 +480,10 @@ planner.forEach((plan)=>{
    clear.addEventListener("click",()=>{
       let id = input.id;
       let index = planArr.findIndex((elem)=> elem.id === id);
+      console.log(index);
       planArr.splice(index,1);
       localStorage.setItem("plans",JSON.stringify(planArr));
-      input.value = ".....";
+      input.value = "";
       planUI();
    });
 });
