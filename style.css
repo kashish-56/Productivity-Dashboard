@@ -438,14 +438,17 @@ border: 1px solid rgba(255, 255, 255, 0.12);
   justify-content: space-between;
 
   align-items: center;
-
+ 
   padding: 18px 22px;
 
   border-radius: 18px;
 
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.226);
 
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.task p{
+   font-size :20px;
 }
 .actions {
   display: flex;
@@ -825,9 +828,9 @@ border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .pomodoro-card {
-  background: rgba(255, 255, 255, 0.06);
+  /* background: rgba(255, 255, 255, 0);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px); */
   
   border-radius: 15px;
   padding: 10px;
@@ -1248,5 +1251,27 @@ body.light-mode .todo-input input::placeholder {
 
 body.light-mode .planner-container input{
   background-color: gray;
+  color: white;
+}
+body.light-mode #timerDisplay{
+  color: black;
+}
+
+body.light-mode .planner-title h1{
+  /* background: white; */
+  color: white;
+}
+body.light-mode .planner-title p{
+  /* background: white; */
+  color: white;
+}
+
+body.light-mode #plannerDate{
+  color: white;
+}
+body.light-mode #plannerTime{
+  color: white;
+}
+body.light-mode #plannerTime span{
   color: white;
 }
