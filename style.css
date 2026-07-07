@@ -1250,17 +1250,32 @@ body.light-mode .todo-input input::placeholder {
 }
 
 body.light-mode .planner-container input{
-  background-color: gray;
-  color: white;
+ background: rgba(128, 128, 128, 0.356);
+ border: 1px solid white;
 }
 body.light-mode #timerDisplay{
   color: black;
+}
+
+body.light-mode .planner-container .planner{
+  background: white;
 }
 
 body.light-mode .planner-title h1{
   /* background: white; */
   color: white;
 }
+
+body.light-mode .planner-container .planner .planner-slot{
+   background: rgba(128, 128, 128, 0.356);
+    border: 1px solid black;
+}
+  
+body.light-mode .planner-slot .slot-time{
+  color: black;
+
+}
+
 body.light-mode .planner-title p{
   /* background: white; */
   color: white;
@@ -1274,4 +1289,14 @@ body.light-mode #plannerTime{
 }
 body.light-mode #plannerTime span{
   color: white;
+}
+
+body.light-mode .todo-page{
+  background: white;
+}
+body.light-mode .todo-page #taskInput{
+  background: rgba(128, 128, 128, 0.356);
+}
+body.light-mode .todo-page #taskList .task{
+  background: rgba(128, 128, 128, 0.356);
 }
