@@ -1304,3 +1304,7 @@ body.light-mode .todo-page #taskList .task{
 body.light-mode .planner-slot input::placeholder {
   color: black;
 }
+
+body.light-mode nav h1{
+  color: white;
+}
