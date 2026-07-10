@@ -321,14 +321,10 @@ nav h1 {
 
   border-radius: 25px;
 
-  /* background: rgba(17, 25, 40, 0.25);
-
-  backdrop-filter: blur(20px);
-
-  border: 1px solid rgba(255, 255, 255, 0.12); */
-  background: rgba(72, 86, 117, 0.75);
+ background: #1E2630;
 
 backdrop-filter: blur(18px);
+opacity: 0.9;
 
 border: 1px solid rgba(255, 255, 255, 0.12);
 
@@ -387,7 +383,7 @@ border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.08);
 
   color: white;
-
+  border: 1px solid white;
   font-size: 18px;
 }
 
@@ -420,7 +416,7 @@ border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
 
   justify-content: space-between;
-
+  
   margin-bottom: 20px;
 }
 #taskList {
@@ -429,9 +425,29 @@ border: 1px solid rgba(255, 255, 255, 0.12);
   flex-direction: column;
 
   gap: 18px;
-
+  max-height: 60vh;
+  overflow-y: scroll;
   list-style: none;
 }
+
+
+#taskList::-webkit-scrollbar {
+  width: 8px;
+}
+
+#taskList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#taskList::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 20px;
+}
+
+#taskList::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
 .task {
   display: flex;
 
